@@ -1,43 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Suite landing page</title>
 </head>
+
 <body>
 
-  Request Beta Access
+  <main>
 
-  A super solution for your business.
+    <header class="suite__header">
+      <img src="assets/logo.svg" class="suite__header-logo" alt="suite logo">
+      <button class="suite__header-btn">Request Beta Access</button>
+    </header>
 
-  Our marketing and sales automations help you scale your outreach to 
-  get more leads for your company. 
+    <section class="suite__hero">
 
-  Request Beta Access
+      <img class="suite__hero-pattern" src="assets/pattern-curved-line-1.svg">
+      <picture class="suite__hero-img">
+        <source srcset="assets/image-hero-landscape.png" media="(max-width: 370px)">
+        <source srcset="assets/image-hero-portrait.png" media="(min-width: 1440px)">
+        <img src="assets/image-hero-portrait@2x.png">
+      </picture>
+      <h1 class="suite__hero-title">
+        A <span>super solution</span> for your <span>business.</span>
+      </h1>
+      <p class="suite__hero-text">
+        Our marketing and sales automations help you scale your outreach to
+        get more leads for your company.
+      </p>
+      <button class="suite__hero-btn">
+        Request Beta Access
+      </button>
 
-  2K+
-  Companies
+    </section>
 
-  8
-  Languages
+    <section class="suite__stats">
+      <div class="stat__container">
+        <p class="stat__container-num">2K+</p>
+        <p class="stat__container-title">COMPANIES</p>
+      </div>
+      <div class="stat__container">
+        <p class="stat__container-num">8</p>
+        <p class="stat__container-title">LANGUAGES</p>
+      </div>
+      <div class="stat__container">
+        <p class="stat__container-num">1.2M</p>
+        <p class="stat__container-title">LEADS</p>
+      </div>
+    </section>
 
-  1.2M
-  Leads
+    <article class="suite__testimonial">
 
-  It just works.
+      <img class="suite__testimonial-background" src="assets/pattern-blur.svg">
+      <picture class="suite__testimonial-img">
+        <source srcset="assets/image-jeremy-small.png" media="(max-width: 370px)">
+        <source srcset="assets/image-jeremy-large.png" media="(min-width: 1440px)">
+        <img src="assets/image-jeremy-large.png" alt="Picture of Jeremy on his phone">
+      </picture>
+      <img class="suite__testimonial-pattern" src="assets/pattern-curved-line-2.svg">
+      <p class="suite__testimonial-title">
+        It just <span>works.</span>
+      </p>
+      <p class="suite__testimonial-text">
+        “I really like how it is an all-in-one solution that handle many of
+        the tasks that you would normally need separate tools to do the same
+        job. This thing is a miracle worker.”
+      </p>
+      <p class="suite__testimonial-name">
+        Jeremy Robinson
+      </p>
+      <p class="suite__testimonial-role">
+        CMO, Fylo
+      </p>
 
-  “I really like how it is an all-in-one solution that handle many of 
-  the tasks that you would normally need separate tools to do the same 
-  job. This thing is a miracle worker.”
+    </article>
 
-  Jeremy Robinson
-  CMO, Fylo
+    <footer class="suite__footer">
+      <img class="suite__footer-logo" src="assets/logo.svg" alt="Suite logo">
+      <p class="suite__footer-text">Copyright - Suite</p>
+      <div class="suite__footer-socials">
+        <img src="assets/icon-facebook.svg" alt="Facebook icon">
+        <img src="assets/icon-twitter.svg" alt="Twitter icon">
+        <img src="assets/icon-instagram.svg" alt="Instagram icon">
+      </div>
+    </footer>
 
-  Copyright - Suite
+  </main>
 
 </body>
+
 </html>
