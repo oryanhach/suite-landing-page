@@ -1,0 +1,109 @@
+:root {
+	/* Colors */
+	--clr-natural-900: #172339;
+	--clr-natural-500: #49566d;
+	--clr-natural-200: #f3ede7;
+	--clr-natural-0: #faf8f6;
+
+	--clr-purple: #cb30e3;
+
+	--clr-gradient: linear-gradient(
+		135deg,
+		#a060ff 0%,
+		#cb30e3 49.21%,
+		#ffa84e 100%
+	);
+
+	/* Typography */
+
+	--ff-main: 'Epilogue', sans-serif;
+
+	--fs-900: 72px;
+	--fs-800: 56px;
+	--fs-700: 38px;
+	--fs-600: 48px;
+	--fs-500: 20px;
+	--fs-400: 18px;
+	--fs-300: 16px;
+	--fs-200: 15px;
+}
+
+/* CSS RESET */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+	margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
+body {
+	/* 4. Add accessible line-height */
+	line-height: 1.5;
+	/* 5. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* general styling */
